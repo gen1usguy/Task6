@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="menuButton">
+        <a href="index.html" class="menuText">Menu</a>
+      </div>
+      <div class="menuButton">
+        <a href="team.html" class="menuText">Team</a>
+      </div>
+      <div class="menuButton">
+        <a href="lessons.html" class="menuText">Lessons</a>
+      </div>
+    </div>
+    <div class="mainBlock">
+      <div class="longSideDiv">
+        <div class="iconContainer iconContainerFolder">
+          <img
+            class="smallIcons smallIconsActive"
+            src="./images/icons/folder.svg"
+          />
+        </div>
+        <a href="./Profile.html"
+          ><div class="iconContainer activeIconContainer iconContainerMonitor">
+            <img class="smallIcons" src="./images/icons/monitor.svg" /></div
+        ></a>
+        <div class="iconContainer iconContainerUsersAlt">
+          <img class="smallIcons" src="./images/icons/users-alt.svg" />
+        </div>
+        <div class="iconContainer iconContainerCloudShare">
+          <img class="smallIcons" src="./images/icons/cloud-share.svg" />
+        </div>
+        <div class="iconContainer iconContainerCog">
+          <img class="smallIcons" src="./images/icons/cog.svg" />
+        </div>
+      </div>
+      <div class="infoPasswordContainer">
+        <div class="userInfoBox">
+          <img class="profilePictures" src="./images/A.png" alt="A" />
+          <p class="menuText">Andy Cube</p>
+          <p class="descripText">andycube@gmail.com</p>
+        </div>
+        <div class="passwordContainer">
+          <div class="upperContainer">
+            <div class="profileIconContainer">
+              <img
+                class="filterWhite"
+                src="./images/icons/padlock.svg"
+                alt="A"
+              />
+            </div>
+            <p class="menuText">Change Password</p>
+
+            <p class="descripText">
+              Please choose a password longer than 6 characters
+            </p>
+          </div>
+
+          <form>
+            <label for="oldPassword">Old password</label>
+            <input
+              id="oldPassword"
+              type="password"
+              placeholder="Enter Password"
+            />
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter Password" />
+            <label for="confirmPassword">Confirm password</label>
+            <input
+              id="confirmPassword"
+              type="password"
+              placeholder="Enter Password"
+            />
+            <input type="submit" value="Save" />
+          </form>
+        </div>
+      </div>
+      <div class="companyContainer">
+        <div class="upperContainer">
+          <div class="profileIconContainer">
+            <img
+              class="filterWhite"
+              src="./images/icons/university.svg"
+              alt="CompanyIcon"
+            />
+          </div>
+          <p class="menuText">Company</p>
+          <p class="descripText">
+            Optional, but we would appreciate if you had filled out this form
+          </p>
+        </div>
+
+        <form>
+          <label for="companyName">Company Name</label>
+          <input type="text" name="Company Name" id="companyName" />
+          <label for="companyAdress">Company Adress</label>
+          <textarea
+            name="company Adress"
+            id="companyAdress"
+            cols="20"
+            rows="5"
+          ></textarea>
+        </form>
+        <div class="formContainer">
+
+          <form>
+            <div class="rowFormContainer"></div>
+              <label for="Country">Country</label>
+              <input type="text2" name="Country" id="country" />
+              <label for="city">City</label>
+              <input type="text2" name="City" id="city" />
+            </div>
+            <div class="rowFormContainer">
+              <label for="State">State</label>
+              <input type="text2" name="State" id="State" />
+              <label for="postalCode">Postal Code</label>
+              <input type="text2" name="Postal Code" id="postalCode" />
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

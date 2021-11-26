@@ -1,0 +1,280 @@
+@import url("./reset.css");
+@import url("./fonts.css");
+@import url("./images.css");
+@import url('../images/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css');
+@import url('./forms.css');
+
+.header {
+  width: 1440px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 40px auto;
+  gap: 50px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.menuButton {
+  width: 70px;
+  height: 40px;
+  padding: 5px;
+}
+.menuText {
+  font-family: "bahji";
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+.headText {
+  font-family: "bahji";
+  font-size: 26px;
+  color: rgb(119, 119, 119);
+}
+.menuTextActive {
+  color: rgb(39, 133, 247);
+}
+.mainBlock {
+  display: flex;
+  background-color: rgb(233, 233, 233);
+  width: 1450px;
+  height: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.innerBlock1 {
+  width: 1250px;
+  height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.innerContainer1 {
+  width: 1250px;
+  height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.innerContainer2 {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.longSideDiv {
+  height: 460px;
+  width: 100px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.longDiv {
+  height: 60px;
+  width: 540px;
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.fatDiv {
+  height: 140px;
+  width: 680px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+}
+.bigDiv {
+  width: 390px;
+  height: 390px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+}
+.photoBlock {
+  width: 275px;
+  height: 275px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  border-radius: 30px;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.nameText {
+  font-family: "bahji";
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+}
+.descripText {
+  font-family: "ChronicaPro";
+  font-size: 16px;
+  color: rgb(119, 119, 119);
+}
+.table{
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: separate;
+  border-radius: 30px;
+  border-spacing: 0 15px;
+  font-family: "bahji";
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  
+}
+td, tr{
+  border-radius: 30px;
+  margin: top 10px;
+}
+tr:hover{
+  background-color: white;
+}
+td{
+  height: 50px;
+  vertical-align: middle;
+}
+th{
+  height: 50px;
+  vertical-align: middle;
+}
+
+table th {
+  padding: 5px;
+}
+.iconContainer::after{
+  background-color: rgb(39, 133, 247);
+  width: 0px;
+  height: 50px;
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 5px;
+  top: 0px;;
+  left: 0px;
+  z-index: -1;
+  transition-duration: 0.9s;
+  text-align:center;
+  line-height: 50px;
+  padding: 0px 0px 0px 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "ChronicaPro", regular;
+  font-size: 16px;
+  color: white;
+}
+.iconContainerFolder::after{
+  content: 'Project';
+}
+.iconContainerMonitor::after{
+  content: 'Account';
+}
+.iconContainerUsersAlt::after{
+  content: 'Groups';
+}
+.iconContainerCloudShare::after{
+  content: 'Cloud';
+}
+.iconContainerCog::after{
+  content: 'Settings';
+}
+.iconContainer:hover::after{
+width: 130px;
+z-index: 0;
+
+}
+.iconContainer{
+  position: relative;
+  border-radius: 10px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+}
+.activeIconContainer{
+  background-color: rgb(39, 133, 247) 
+}
+.InfoPasswordContainer{
+  width: 600px;
+  height: 700px;
+}
+.userInfoBox{
+  width: 600px;
+  height: 135px;
+  background-color: white;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  justify-content:center;
+  align-items:flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.upperContainer{
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+  flex-flow: column wrap;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+
+}
+.passwordContainer{
+  width: 600px;
+  height: 550px;
+  background-color: white;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+}
+.companyContainer{
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+}
+.formContainer{
+  width: 100%;
+  height: 260px;
+  display: flex;
+  flex: wrap;
+
+
+}
+.rowFormContainer{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: stretch;
+} 
